@@ -10,6 +10,7 @@ public abstract class Pizza {
     final Set<Topping> toppings;
 
     abstract static class Builder<T extends Builder<T>> {
+        // Builder doesn't specify a contructor.
         EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
         public T addTopping(Topping topping) {
             toppings.add(Objects.requireNonNull(topping));

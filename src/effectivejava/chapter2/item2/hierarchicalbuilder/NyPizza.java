@@ -9,7 +9,7 @@ public class NyPizza extends Pizza {
 
     public static class Builder extends Pizza.Builder<Builder> {
         private final Size size;
-
+// constructor contains must-have variables.
         public Builder(Size size) {
             this.size = Objects.requireNonNull(size);
         }
